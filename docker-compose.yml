@@ -1,8 +1,8 @@
 version: "3"
 
 services:
-  react-app:
-    image: react-app
+  test-react-app:
+    image: test-react-app
     build:
       ./frontend/
     stdin_open: true
@@ -11,8 +11,8 @@ services:
     networks:
       - mern-app
 
-  api-server:
-    image: api-server
+  test-api-server:
+    image: test-api-server
     build:
       ./backend/
     ports:
